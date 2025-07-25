@@ -2,21 +2,22 @@ datasource:
   system-master:
     # jdbc 所有参数配置参考 https://lionli.blog.csdn.net/article/details/122018562
     # rewriteBatchedStatements=true 批处理优化 大幅提升批量插入更新删除性能
-    url: jdbc:mysql://localhost:3306/ry-cloud?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true
-    username: root
-    password: password
+    url: jdbc:mysql://master.nebulatrade.net:3306/nebula_cloud?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=UTC&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true
+    username: nebula_erp
+    password: Nebula@2025A
   gen:
-    url: jdbc:mysql://localhost:3306/ry-cloud?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true
-    username: root
-    password: password
+    url: jdbc:mysql://master.nebulatrade.net:3306/nebula_cloud?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=UTC&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true
+    username: nebula_erp
+    password: Nebula@2025A
   job:
-    url: jdbc:mysql://localhost:3306/ry-job?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true
-    username: root
-    password: password
+    url: jdbc:mysql://master.nebulatrade.net:3306/nebula_cloud?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=UTC&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true
+    username: nebula_erp
+    password: Nebula@2025A
   workflow:
-    url: jdbc:mysql://localhost:3306/ry-workflow?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true&nullCatalogMeansCurrent=true
-    username: root
-    password: password
+    url: jdbc:mysql://master.nebulatrade.net:3306/nebula_cloud?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=UTC&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true&nullCatalogMeansCurrent=true
+    #url: jdbc:mysql://localhost:3306/ry-workflow?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true&nullCatalogMeansCurrent=true
+    username: nebula_erp
+    password: Nebula@2025A
 #  system-oracle:
 #    url: jdbc:oracle:thin:@//localhost:1521/XE
 #    username: ROOT
